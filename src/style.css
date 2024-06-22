@@ -1,0 +1,189 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Sora", sans-serif;
+}
+
+body {
+    color: white;
+    background-color: #181e25;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+#landingPage {
+
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+img#logoHashProg {
+    background-color: white;
+    width: 36px;
+    border-radius: 10%;
+    padding: 5px;
+
+    margin-bottom: 10px;
+}
+
+li {
+    list-style: none;
+    font-size: 13.3px;
+}
+
+.warning {
+    background-color: #10151b;
+    
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+
+    text-align: center;
+}
+
+.warning p {
+    padding: 20px 0;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.step-itens {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    background-color: #2b323c;
+    padding: 20px 40px;
+    border-radius: 15px;
+
+    margin-bottom: 40px;
+}
+
+.step.iten {
+    padding: 5px 10px;
+}
+
+.description-journey {
+    display: flex;
+    gap: 10px;
+}
+
+.description-journey-item {
+    background-color: #2b323c;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.description-requirement {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+
+h1 {
+    font-size: 39.8px;
+}
+
+h2 {
+    font-size: 23px;
+    font-weight: normal;
+}
+
+.color-blue {
+    color: #00a8dd
+}
+
+h3 {
+    font-size: 19px;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h5 {
+    font-size: 13.3px;
+    font-weight: normal;
+}
+
+button h2 {
+    color: white;
+}
+
+button {
+    background-color: #008bbb;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: solid 1px #008bbb;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.infos {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 80px;
+
+}
+
+.info-lira {
+    background-color: #2b323c;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+
+    justify-content: center;
+}
+
+.info {
+    background-color: #2b323c;
+    padding: 20px;
+    border-radius: 15px;
+    
+    margin-bottom: 40px;
+}
+
+.info-right {
+    margin-top: 20px;
+}
+
+.info-vaga {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #00b1d3;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+
+    background-color: #2b323c;
+}
