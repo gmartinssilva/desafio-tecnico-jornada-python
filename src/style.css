@@ -9,12 +9,37 @@ body {
     background-color: #181e25;
 }
 
+@media (max-width: 768px) {
+    main {
+        flex-direction: column; /* Ajusta o main para coluna em telas menores */
+        padding: 15px;
+    }
+
+    .step-itens {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .infos {
+        flex-direction: column;
+    }
+
+    .info-lira, .info-right {
+        width: 100%;
+    }
+
+    .waring {
+        text-align: left;
+    }
+}
+
 main {
     display: flex;
     justify-content: center;
     gap: 50px;
-    flex-wrap: wrap;
     padding-top: 30px;
+
+    margin-bottom: 80px;
 }
 
 #landingPage {
@@ -30,7 +55,7 @@ img#logoHashProg {
     border-radius: 10%;
     padding: 5px;
 
-    margin-bottom: 10px;
+    margin: 20px 0
 }
 
 li {
@@ -39,18 +64,19 @@ li {
 }
 
 .warning {
+    color: #a5a5a5;
     background-color: #10151b;
     
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
+    /*width: 100vw;
+    margin-left: calc(50% - 50vw);*/
+    margin-bottom: 80px;
+    margin-left: calc(-100vw / 2 + 1000px / 2);
+    margin-right: calc(-100vw / 2 + 1000px / 2);
 
     text-align: center;
-}
+    padding: 40px 0;
 
-.warning p {
-    padding: 20px 0;
 }
-
 .steps {
     display: flex;
     flex-direction: column;
@@ -80,15 +106,23 @@ li {
 
 .description-journey-item {
     background-color: #2b323c;
-    padding: 5px 10px;
+    padding: 20px 40px 20px 20px;
     border-radius: 15px;
     margin-bottom: 10px;
+}
+
+.description-journey-item-2, li {
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    gap: 5px;
 }
 
 .description-requirement {
     display: flex;
     align-items: center;
-    gap: 0px;
+    gap: 12px;
+    margin-bottom: 10px;
 }
 
 h1 {
@@ -118,21 +152,32 @@ h5 {
     font-weight: normal;
 }
 
-button h2 {
+button h3 {
     color: white;
+    font-weight: normal;
 }
 
 button {
+    display: flex;
+    gap: 4px;
     background-color: #008bbb;
     padding: 5px 10px;
-    border-radius: 15px;
-    border: solid 1px #008bbb;
+    border-radius: 10px;
+    border-right: solid 2px #004e69;
+    border-bottom: solid 2px #004e69;
+    border-top: none;
+    border-left: none;
 }
 
 .card {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 5px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+
+    background-color: #10151b;
 }
 
 .infos {
@@ -145,11 +190,20 @@ button {
 
 .info-lira {
     background-color: #2b323c;
-    text-align: center;
     padding: 20px;
     border-radius: 15px;
+}
 
-    justify-content: center;
+.info-lira h2 {
+    padding: 30px 40px;
+}
+
+.info-lira p {
+    text-align: center;
+}
+
+.info-right img {
+    float: right;
 }
 
 .info {
@@ -160,30 +214,74 @@ button {
     margin-bottom: 40px;
 }
 
+.info-title {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
 .info-right {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .info-vaga {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #00b1d3;
+    /*background-color: #00b1d3;*/
     padding: 10px;
     border-radius: 15px;
+
+    /*background: rgb(0,89,130);*/
+    background: linear-gradient(90deg, rgba(0,89,130,1) 0%, rgba(0,177,211,1) 100%);
 }
 
 footer {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    gap: 4px;
 
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
+    /*width: 100vw;
+    margin-left: calc(50% - 50vw);*/
+
+    margin-left: calc(-100vw / 2 + 1000px / 2);
+    margin-right: calc(-100vw / 2 + 1000px / 2);
 
     padding-top: 40px;
     padding-bottom: 40px;
     padding-right: 40px;
 
     background-color: #2b323c;
+}
+
+button:hover {
+    font-style: italic;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.steps h1 {
+    margin-bottom: 25px;
+}
+
+.info-vaga button {
+        display: flex;
+        gap: 4px;
+        background-color: #2b323c;
+        padding: 5px 10px;
+        border-radius: 10px;
+        border-right: solid 2px #000;
+        border-bottom: solid 2px #000;
+        border-top: none;
+        border-left: none;
 }
